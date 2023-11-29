@@ -10,10 +10,6 @@ beforeAll(async () => {
   context = await Context.build();
 });
 
-beforeEach(async () => {
-  await context.reset();
-})
-
 it("Should create a user", async () => {
   const startingCount = await UserRepo.count();
 
